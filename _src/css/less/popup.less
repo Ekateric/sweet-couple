@@ -1,0 +1,86 @@
+/***Popup.less***/
+.body_has-modal {
+	overflow: hidden;
+
+	.wrapper {
+		overflow-y: scroll;
+	}
+}
+
+.popup {
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 500;
+	background: rgba(0,0,0,.75);
+	font-size: 0;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		width: 0;
+	}
+}
+
+.popup__window {
+	display: inline-block;
+	vertical-align: middle;
+	background: #fff;
+	font-size: 12px;
+	position: relative;
+	margin: 20px 0;
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,.3);
+}
+
+.popup__close {
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 11px;
+	width: 26px;
+	height: 26px;
+	opacity: .6;
+	transition: opacity .2s ease 0s;
+
+	&:before, &:after {
+		content: '';
+		width: 20px;
+		height: 2px;
+		position: absolute;
+		left: 3px;
+		top: 12px;
+		background-color: #403926;
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.popup__result {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.2);
+}
+
+
+
+

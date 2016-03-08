@@ -1,0 +1,54 @@
+/*** give_gift.less ***/
+.give-gift {
+	width: 588px;
+}
+
+.give-gift__info {
+	padding: 25px 45px 36px;
+	background: url("../img/bg/cakes_bg.jpg") #fae9b9;
+}
+
+.give-gift__title {
+	margin-bottom: 21px;
+	.font(36px,1.1,#403926);
+	font-family: @intro;
+	letter-spacing: -.5px;
+}
+
+.give-gift__question {
+	margin-bottom: 4px;
+	.font(17px,1.2,#222d35);
+	font-weight: bold;
+	letter-spacing: -.8px;
+}
+
+.give-gift__question-user {
+	color: #008bc8;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.give-gift__more-text {
+	.font(13px,1.2,#222d35);
+	font-family: @tahoma;
+}
+
+.give-gift__list {
+	position: relative;
+	background: #fff;
+	font-size: 0;
+	padding: 17px 20px 15px 29px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		height: 23px;
+		left: 0;
+		right: 0;
+		bottom: 100%;
+		background: url("../img/decor/wave.png") repeat-x 0 0;
+	}
+}

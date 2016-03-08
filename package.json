@@ -1,0 +1,19 @@
+{
+  "name": "sweet_couple",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "~2.5.2",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-newer": "~0.5.0",
+    "gulp-rename": "~1.2.0",
+    "gulp-sprite-generator": "~0.2.3",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "~4.1.1",
+    "imagemin-pngquant": "^4.2.2",
+    "less-plugin-autoprefix": "~1.5.1"
+  }
+}
