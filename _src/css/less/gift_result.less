@@ -4,6 +4,13 @@
 	padding: 19px 0;
 }
 
+.gift-result_animation {
+	animation: fall;
+	animation-delay: .2s;
+	animation-duration: .2s;
+	animation-fill-mode: both;
+}
+
 .gift-result_success {
 	background: #c56290;
 	margin: 94px 0 31px;
@@ -87,16 +94,24 @@
 }
 
 .gift-result__text {
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	.font(17px,1.1,#fff);
 	font-weight: bold;
 	letter-spacing: -.7px;
 }
 
 .gift-result__actions {
-
+	position: relative;
 }
 
 .gift-result__ok {
 	width: 128px;
 }
+
+.gift-result__share-label {
+	position: absolute;
+	left: 50%;
+	top: 10px;
+	margin-left: 90px;
+}
+

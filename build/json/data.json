@@ -1,0 +1,11 @@
+﻿{
+  "status": true,
+  "alreadyTake": true,
+  "userName": "Елена",
+  "myImg": "../img/users/boy.jpg",
+  "title": "УРА!",
+  "subTitle": "Объявляем вас сладкой парочкой!",
+  "achieve": "Вы получаете 10 Ставок в Лидере сайта",
+  "resultText": "Алёна ответила вам взаимностью!",
+  "giftImage": "../img/gifts/gift_double.png"
+}
