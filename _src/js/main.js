@@ -9,13 +9,13 @@
  */
 function getData(url, params, ready) {
 	var xhr = new XMLHttpRequest();
-	xhr.open('GET', url, true);
+	xhr.open('GET', url + '?' + params, true);
 	xhr.onreadystatechange = function() {
 		if(this.readyState === 4 && this.status === 200) {
 			ready(this.responseText);
 		}
 	};
-	xhr.send(params);
+	xhr.send();
 }
 
 /**
@@ -56,9 +56,7 @@ function sendEvent(e) {
 
 	var sendBtn = this,
 		form = document.forms.gift,
-		formData = new FormData(form);
-
-	formData.append('giftId', sendBtn.parentElement.getAttribute('data-gift-id'));
+		formData = 'myId=' + form.elements['myId'].value + '&userId=' + form.elements['userId'].value + '&giftId=' + sendBtn.parentElement.getAttribute('data-gift-id');
 
 	getData(form.getAttribute('action'), formData, function(requestData) {
 		requestData = JSON.parse(requestData);
